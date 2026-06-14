@@ -1,24 +1,17 @@
 import TimelineNode from "./TimelineNode";
 
-function Timeline({
-  stages,
-  activeStage,
-  setActiveStage
-}) {
-
+function Timeline({ stages, activeStage, onSelectStage }) {
   return (
-    <section className="timeline">
-
-      {stages.map(stage => (
+    <nav className="timeline" aria-label="Etapas del proceso de impresión 3D">
+      {stages.map((stage) => (
         <TimelineNode
           key={stage.id}
           stage={stage}
-          activeStage={activeStage}
-          setActiveStage={setActiveStage}
+          isActive={activeStage?.id === stage.id}
+          onSelect={() => onSelectStage(stage.id)}
         />
       ))}
-
-    </section>
+    </nav>
   );
 }
 

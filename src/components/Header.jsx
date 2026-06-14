@@ -1,14 +1,15 @@
 function Header() {
-    return (
-      <header className="header">
-        <h1>Viaje de una Pieza Impresa en 3D</h1>
-  
-        <p>
-          Descubre cómo una idea se transforma en un objeto físico
-          mediante impresión 3D.
-        </p>
-      </header>
-    );
-  }
-  
-  export default Header;
+  return (
+    <header className="header">
+      <p className="eyebrow">Infografía interactiva animada</p>
+      <h1>Viaje de una pieza impresa en 3D</h1>
+      <p>
+        Sigue el recorrido de una pieza desde la idea inicial hasta el objeto
+        terminado. Haz clic en cada etapa para explorar su imagen, detalles,
+        datos clave y narración.
+      </p>
+    </header>
+  );
+}
+
+export default Header;

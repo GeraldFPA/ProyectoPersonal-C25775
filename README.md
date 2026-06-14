@@ -1,16 +1,69 @@
-# React + Vite
+# Viaje de una pieza impresa en 3D
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Infografía interactiva animada creada con React y Vite para el Proyecto Personal
+del curso IF7102 - Multimedios.
 
-Currently, two official plugins are available:
+## Framework elegido
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+React. La aplicación usa componentes reutilizables, props, estado reactivo,
+eventos de clic, ciclo de vida con `useEffect` y carga de datos desde JSON con
+`fetch()`.
 
-## React Compiler
+## Opción del proyecto
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Opción 2: Infografía Interactiva Animada.
 
-## Expanding the ESLint configuration
+La infografía muestra el recorrido de una pieza impresa en 3D:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Idea
+- Diseño CAD
+- Laminado
+- Impresión
+- Limpieza
+- Producto terminado
+
+Cada etapa incluye título, descripción, imagen SVG, ícono SVG animado, datos
+clave y narración activada por interacción.
+
+## Requisitos cubiertos
+
+- React como framework JavaScript.
+- Más de 4 componentes reutilizables: `Header`, `Timeline`, `TimelineNode`,
+  `StageCard`, `StageIcon` y `AudioPlayer`.
+- Datos cargados dinámicamente desde `public/data/stages.json` usando `fetch()`.
+- Estado reactivo para controlar la etapa activa.
+- Eventos `click` en los nodos de la línea de tiempo.
+- SVG con animaciones CSS e interacción por hover/focus.
+- Narración por sección mediante clips locales `.wav` desde el componente
+  reutilizable `AudioPlayer`.
+- Diseño responsive para escritorio y móvil.
+
+## Instalación y ejecución
+
+```bash
+npm install
+npm run dev
+```
+
+Luego abre la URL local que muestra Vite en la terminal.
+
+## Scripts disponibles
+
+```bash
+npm run dev
+npm run build
+npm run preview
+npm run lint
+```
+
+## Estructura principal
+
+```text
+public/data/stages.json     Datos de la infografía
+src/components/             Componentes reutilizables de React
+src/assets/img/             Imágenes SVG de cada etapa
+src/App.jsx                 Carga de datos y estado principal
+src/App.css                 Diseño responsive y animaciones
+```
+
+
