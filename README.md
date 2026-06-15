@@ -41,8 +41,8 @@ clave y narración activada por interacción.
 ## Instalación y ejecución
 
 ```bash
-npm install
-npm run dev
+pnpm install
+pnpm run dev
 ```
 
 Luego abre la URL local que muestra Vite en la terminal.
@@ -50,10 +50,10 @@ Luego abre la URL local que muestra Vite en la terminal.
 ## Scripts disponibles
 
 ```bash
-npm run dev
-npm run build
-npm run preview
-npm run lint
+pnpm run dev
+pnpm run build
+pnpm run preview
+pnpm run lint
 ```
 
 ## Estructura principal

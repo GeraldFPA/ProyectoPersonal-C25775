@@ -15,7 +15,9 @@
 - MDN Web Docs: "ARIA: button role" - https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/button_role
 - MDN Web Docs: "CSS animations" - https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animations
 
-
+## Lincencias de imagenes 
+- Videoplasty.com, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons
+- Imagenes **cad.svg**, **final.svg**, **post.svg**, **printing.svg**, **slicer.svg** son creaciones propias con IA.
 
 ## Uso de IA
 
