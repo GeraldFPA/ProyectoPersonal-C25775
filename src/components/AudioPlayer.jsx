@@ -24,6 +24,10 @@ function AudioPlayer({ audio, label, text }) {
     setIsPlaying(false);
   }
 
+  const audioSrc = audio.startsWith("http")
+    ? audio
+    : `${import.meta.env.BASE_URL}${audio.replace(/^\/+/, "")}`;
+
   return (
     <section className="audio-panel" aria-label={`Narración de ${label}`}>
       <div>
@@ -33,7 +37,7 @@ function AudioPlayer({ audio, label, text }) {
 
       <audio
         ref={audioRef}
-        src={audio}
+        src={audioSrc}
         preload="metadata"
         onEnded={() => setIsPlaying(false)}
       >
