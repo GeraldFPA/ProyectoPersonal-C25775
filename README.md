@@ -54,6 +54,7 @@ pnpm run dev
 pnpm run build
 pnpm run preview
 pnpm run lint
+pnpm run deploy
 ```
 
 ## Estructura principal
